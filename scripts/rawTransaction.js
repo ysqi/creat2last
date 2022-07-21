@@ -3,10 +3,11 @@ const bytecode = require('../artifacts/contracts/LastCreate2Factory.sol/LastCrea
 
 const rawTransaction = {
   nonce: 0,
-  gasPrice: 100 * 1e9,
+  gasPrice: 28 * 1e9,
   value: 0,
   data: bytecode,
-  gasLimit: 521266,
+  // use the max gas limit 6791946 for arbitrum, Actually only used 438343 gas on ethereum mainnet
+  gasLimit: 6791946
 };
 
 module.exports = {

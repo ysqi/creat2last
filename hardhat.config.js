@@ -32,7 +32,7 @@ for (var item of Object.keys(process.env)) {
  */
 module.exports = {
   solidity: {
-    version: '0.8.15',
+    version: '0.5.12',
     settings: {
       optimizer: {
         enabled: true,
@@ -49,6 +49,10 @@ module.exports = {
       url: process.env.MAINNET_URL || '',
       accounts: accounts,
     },
+    arbitrumRinkeby: {
+      url: "https://rinkeby.arbitrum.io/rpc",
+      accounts: accounts,
+    }
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,

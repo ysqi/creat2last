@@ -8,9 +8,7 @@ const hre = require("hardhat");
 const deployment = require("./deployment")
 
 async function main() {
-
   console.log("deployer:", deployment.generateDeployTx().deployer)
-
   const contract = await deployment.deploy(hre.ethers.provider)
   console.log(`factory deployed: ${contract.address}`)
 }
