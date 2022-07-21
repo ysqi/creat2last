@@ -1,4 +1,6 @@
-# OneAddress
+# Create2last
+
+LastCreate2 is a tool to deply contract with same address on any chain (EVM).
 
 Try running some of the following tasks:
 
